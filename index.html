@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 mx-auto  main">
+                <h1 class="text-center ">Body Mass Index</h1>
+                <p class="text-center space">Calculate Your BMI</p>
+                <form action="">
+                    <div class="form-group row mb-2">
+                        <label for="Height" class="col-sm-2 col-form-label">Height</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="height" placeholder="Type here your height in cm.">
+                        </div>
+                      </div>
+                    <div class="form-group row mb-2">
+                        <label for="Weight"class="col-sm-2 col-form-label">Weight</label>
+                        <div class="col-sm-10">
+                            <input type="text"class="form-control"id="weight"placeholder="Type here your weight in kg.">
+                        </div>
+                    </div>
+                </form>
+                <button type="submit" class="btn mb-3 btn-block btn-success ">Calculate</button>
+
+                <p class="text-center"id="output"></p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
